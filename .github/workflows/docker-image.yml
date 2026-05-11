@@ -1,6 +1,7 @@
 name: Docker Image CI
 
 on:
+  workflow_dispatch:
   push:
     branches: [ "master" ]
   pull_request:
@@ -19,4 +20,4 @@ jobs:
         submodules: recursive
 
     - name: Build The Docker Image
-      run: docker build . --file Dockerfile --tag b1-showinfo-docs-docker-runtime:$(date +%s)
+      run: docker build . --file Dockerfile --tag b1-showinfo-docs-docker-runtime
