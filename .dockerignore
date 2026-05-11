@@ -1,0 +1,5 @@
+.git/
+b1-showinfo-docs/*
+!b1-showinfo-docs/package*.json
+!b1-showinfo-docs/data/requirements.txt
+.gitmodules
