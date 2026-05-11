@@ -1,0 +1,3 @@
+[submodule "b1-showinfo-docs"]
+	path = b1-showinfo-docs
+	url = https://github.com/B1-9-Curses-SpeedRunning/b1-showinfo-docs.git
