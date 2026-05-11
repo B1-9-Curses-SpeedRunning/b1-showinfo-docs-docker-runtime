@@ -13,6 +13,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
-    - name: Build the Docker image
+    - name: Checkout Repo With Submodules
+      uses: actions/checkout@v4
+      with:
+        submodules: recursive
+
+    - name: Build The Docker Image
       run: docker build . --file Dockerfile --tag b1-showinfo-docs-docker-runtime:$(date +%s)
