@@ -1,4 +1,4 @@
-FROM nikolaik/python-nodejs:python3.8-nodejs22-slim
+FROM nikolaik/python-nodejs:python3.10-nodejs22-slim
 
 # 设置 pnpm 的安装目录。
 ENV PNPM_HOME="/pnpm"
